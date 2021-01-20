@@ -72,8 +72,8 @@ services:
     environment:
       - NAMENODE_HOST=namenode
   ubuntu:
-    container_name: ubuntu:latest
-    image: ubuntu
+    container_name: ubuntu
+    image: ubuntu:latest
     volumes:
       - ./share_data:/share_data
     ports:
