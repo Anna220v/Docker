@@ -10,7 +10,7 @@ services:
     env_file:
       - ./hadoop-hive.env
     ports:
-      - 50070:50070
+      - 50470:50470
   datanode:
     image: bde2020/hadoop-datanode:1.1.0-hadoop2.8-java8
     depends_on: 
