@@ -10,7 +10,7 @@ services:
     env_file:
       - ./hadoop-hive.env
     ports:
-      - 8085:50070
+      - 8071:50070
   datanode:
     image: bde2020/hadoop-datanode:1.1.0-hadoop2.8-java8
     depends_on: 
@@ -20,7 +20,7 @@ services:
     env_file:
       - ./hadoop-hive.env
     ports:
-      - 8086:50075
+      - 8072:50075
   hive-server:
     image: bde2020/hive:2.1.0-postgresql-metastore
     container_name: hive-server
